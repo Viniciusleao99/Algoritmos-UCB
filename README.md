@@ -1,2 +1,3 @@
 # Algoritmos-UCB
-Aqui depositei as listas de exercícios da matéria de Algoritmos da UCB, primeiro semestre
+
+Local onde irei depositar os arquivos desenvolvidos na matéria de Algoritmos e Programação da UCB do primeiro semestre, listas de exercícios e demais conteudos.
