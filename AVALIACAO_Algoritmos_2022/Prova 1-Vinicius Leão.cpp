@@ -7,8 +7,9 @@ int main(){
 
 setlocale(LC_ALL,"portuguese");
 
-	char op, nome[50], NomeObra[50];
-	int a, b, x, hip, seno, ano, MesInicio, MesFim, codigo, tempo;
+    char op, nome[50], NomeObra[50];
+    int a, b, x, hip, seno, ano, MesInicio, MesFim, codigo, tempo;
+	
     printf("Algotitmos e Programacao, Joyce Siqueira, Vinicius Arantes Leao, UC22200223, https://github.com/ViniLion99/Algoritmos-UCB1.git, DevC++ \n");
     printf ("Escolha uma das opcoes: A ou B ou C:");
     scanf("%c", &op);
@@ -47,14 +48,14 @@ setlocale(LC_ALL,"portuguese");
 	scanf("%i", &MesInicio);
 	printf("Digite o mes de termino da obra:\n");
 	scanf("%i", &MesFim);
-	printf("Digite o cógido de situação da obra:\n");
+	printf("Digite o cÃ³gido de situaÃ§Ã£o da obra:\n");
 	scanf("%i", &codigo);
 	
 	tempo = MesFim - MesInicio;
 	
 	switch (codigo){
 		case 1: printf("Nome da obra: %s\n", NomeObra);
-				printf("Obra Concluída\n"); 
+				printf("Obra ConcluÃ­da\n"); 
 				printf("Tempo de execucao: %i\n", tempo);break;
 		case 2:	printf("Nome da obra: %s\n", NomeObra);
 				printf("Problemas no projeto\n");
