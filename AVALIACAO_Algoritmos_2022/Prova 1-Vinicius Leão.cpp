@@ -77,5 +77,3 @@ setlocale(LC_ALL,"portuguese");
 	default: printf("Opcao invalida");}
 	
 return 0;}
-
-
