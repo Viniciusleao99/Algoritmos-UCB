@@ -6,8 +6,8 @@ um número negativo. O programa tem de retornar o maior e o menor número lido *
 int main() {
     int numero, maior = 0, menor = 0, primeiro = 1;
 
-    printf("Digite um numero inteiro (negativo para sair): ");
-    scanf("%d", &numero);
+    printf("Digite um numero inteiro: ");
+    scanf("%i", &numero);
 
     while (numero >= 0) {
         if (primeiro) {
@@ -23,12 +23,11 @@ int main() {
             }
         }
 
-        printf("Digite outro numero inteiro (negativo para sair): ");
-        scanf("%d", &numero);
+        printf("Digite outro numero inteiro: ");
+        scanf("%i", &numero);
     }
 
-    printf("O maior numero lido foi: %d\n", maior);
-    printf("O menor numero lido foi: %d\n", menor);
+    printf("O maior numero digitado foi: %i\n", maior);
+    printf("O menor numero digitado foi: %i\n", menor);
 
-    return 0;
-}
+    return 0;}

@@ -6,23 +6,17 @@ anteriores. Alguns termos dessa sequência são: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34
 #include <stdio.h>
 
 int main() {
-    int n, termoAtual = 0, termoAnterior1 = 0, termoAnterior2 = 1;
+    int i, n, termo1 = 0, termo2 = 1, ProxTermo;
 
-    printf("Digite o valor de n: ");
+    printf("Digite qual termo deseja ver: ");
     scanf("%i", &n);
 
-    if (n == 0) {
-        termoAtual = 0;
-    } else if (n == 1) {
-        termoAtual = 1;
-    } else {
-        for (int i = 2; i <= n; i++) {
-            termoAtual = termoAnterior1 + termoAnterior2;
-            termoAnterior1 = termoAnterior2;
-            termoAnterior2 = termoAtual;
-        }
+        for (int i = 1; i <= n; i++) {
+            ProxTermo = termo1 + termo2;
+            termo1 = termo2;
+            termo2 = ProxTermo;
     }
 
-    printf("O enesimo termo da sequencia de Fibonacci eh: %i", termoAtual);
+    printf("O enesimo termo da sequencia de Fibonacci e: %i", ProxTermo);
 
     return 0;}
